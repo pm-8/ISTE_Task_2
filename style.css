@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin:0;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vh;
+    padding-top: 5vh;
+}
+.nav_contents{
+    padding-top:4vh;
+    display: flex;
+    gap: 4vh;
+}
+.search{
+    padding-top:3vh;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.logo svg{
+    margin-top:5vh;
+}
+.nav_contents div:hover{
+    font-weight: 600;
+}
+/* Vector 1 */
+.bg img{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    z-index: -999;
+
+}
+.bg_content{
+    position: relative;
+    top: 7vh;
+    left: 30vw;
+    max-width: 35vw;
+
+}
+.bg_content h2{
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 8vh;
+    margin:0 1vh;
+
+}
+.watch_our_story{
+    max-width: 10vw;
+    max-height: 10vw;
+    position: absolute;
+    top: 17vh;
+    right: 0vh;
+}
+.watch_our_story img{
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    border-radius: 50% ;
+    top: 17vh;
+    right: 0vh;
+    transition: 0.5s;
+    z-index: 999;
+}
+.watch_our_story img:hover{
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: 17vh;
+    right: 0vh;
+    border-radius: 50% ;
+    transform: rotate(-20deg);
+    box-shadow: 0 1vh 10px brown;
+}
+.user_icon{
+    max-width: 20vw;
+    max-height: 20vh;
+    position: absolute;
+    top: 10vh;
+    left: 70vh;
+}
+.user_icon img{
+    width: 20vw;
+    height: 20vh;
+}
+.kite2{
+    position: absolute;
+    left:-70vh; 
+    transform: rotate(270deg);
+}
+.kite2 img{
+    width: 15vw;
+    height: 30vw;
+    transform: rotate(30deg);
+    transition: 0.5s;
+    z-index:999;
+}
+.kite2 img:hover{
+    width: 20vw;
+    height: 40vw;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.chair_content{
+    position:relative;
+    top: 30vh;
+    padding: 1vh 5vw;
+    display: flex;
+    gap:5vw;
+}
+.dialog_box{
+    max-width: 15vw;
+}
+.dialog_box .row1_dialog{
+    display: flex;  
+}
+.row1_dialog .num{
+    font-weight: 500;
+    font-size: 4vh;
+}
+.row1_dialog .sideline{
+    position: relative;
+    top:3vh;
+    left: 2vh;
+    width:15vh;
+    height: 1px;
+    background-color: hsl(0, 7%, 75%);
+}
+.dialog_box .dialog{
+    position: relative;
+    left: 4.7vh;
+    
+}
+.chairs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.chairs img{
+    width: 46vh;
+    transition: 0.5s;
+}
+.chairs img:hover{
+    width: 50vh;
+}
+/* .chair3 img{
+    width:35vh;
+} */
+@media (max-width: 870px){
+    .watch_our_story{
+        display: block;
+        
+    }
+    .user_icon{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        max-width: 100vw;
+    }
+    .nav_contents{
+        display: none;
+    }
+    .bg img{
+
+    }
+    .bg_content{
+        max-width: 100vw;
+        left:0;
+        text-align: center;
+    }
+    .bg_content h2{
+        font-size: 10vw;
+    }
+    .chair_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dialog_box{
+        position: relative;
+        top:15vh;
+        max-width: 60vw;
+        text-align: center;
+    }
+    .chairs{
+        position: relative;
+        top:15vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .chairs img{
+        width: 40vh;
+    }
+    .chairs img:hover{
+        width: 44vh;
+    }
+    .chair1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chair2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chair3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
